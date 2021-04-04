@@ -5,12 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://unpkg.com/vue"></script>
+
     <title>Matador de Monstros</title>
 </head>
 
 <body>
     <div id="app">
-        <div class="painel score">1</div>
+        <div class="painel scores">
+            <div class="score">
+                <h1>Jogador</h1>
+                <div class="life-bar">
+                    <div class="life" :class="{danger: playerLife < 20}" :style="{width : playerLife+'%'}">
+
+                    </div>
+                </div>
+                <div>{{ playerLife }}%</div>
+            </div>
+
+            <div class="score">
+                <h1>Monster</h1>
+                <div class="life-bar">
+                    <div class="life" :class="{danger: monsterLife < 20}" :style="{width : monsterLife + '%'}">
+
+                    </div>
+                </div>
+                <div>{{ monsterLife }}%</div>
+            </div>
+        </div>
         <div class="painel result">2</div>
         <div class="painel buttons">3</div>
         <div class="painel logs">4</div>

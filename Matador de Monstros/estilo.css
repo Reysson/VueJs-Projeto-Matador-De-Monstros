@@ -1,3 +1,7 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
 .barra-progresso {
     width: 20%;
     background-color: darkgreen;
@@ -13,4 +17,39 @@
     margin: 10px;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/*Area dos pontos*/
+
+.scores {
+    display: flex;
+}
+
+.score {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score h1 {
+    font-weight: 300;
+}
+
+.life-bar {
+    width: 80%;
+    height: 20px;
+    border: 1px solid #AAAA;
+}
+
+.life-bar .life {
+    height: 100%;
+    width: 50%;
+    background-color: darkgreen;
+}
+
+.life-bar .life.danger {
+    background-color: red;
 }
