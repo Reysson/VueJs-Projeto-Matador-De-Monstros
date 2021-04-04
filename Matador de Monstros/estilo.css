@@ -53,3 +53,21 @@ body {
 .life-bar .life.danger {
     background-color: red;
 }
+
+
+/*Area do resultado*/
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.win {
+    color: green;
+}
+
+.lose {
+    color: red;
+}
