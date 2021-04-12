@@ -112,3 +112,34 @@ body {
     background-color: #BBB;
     color: black;
 }
+
+
+/*Are dos logs*/
+
+.logs {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logs ul li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 4px 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.player {
+    background-color: lightblue;
+    color: white;
+}
+
+.monster {
+    background-color: lightcoral;
+    color: white;
+}

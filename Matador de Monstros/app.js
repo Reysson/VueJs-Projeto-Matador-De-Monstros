@@ -38,12 +38,12 @@ new Vue({
         },
         healAndHurt() {
             this.heal(10, 15)
-            this.hurt('playerLife', 7, 12, false)
+            this.hurt('playerLife', 7, 12, false, 'Monstro', 'Jogador', 'monster')
         },
         heal(min, max) {
             const heal = this.getRandom(min, max)
             this.playerLife = Math.min(this.playerLife + heal, 100)
-
+            this.registerLog(`o jogador ganhou força de ${heal}`, 'player')
         },
         registerLog(text, cls) {
             this.logs.unshift({ text, cls })
